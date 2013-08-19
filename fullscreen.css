@@ -1,0 +1,13 @@
+/* html */
+:-webkit-full-screen {
+  background: pink;
+}
+:-moz-full-screen {
+  background: pink;
+}
+
+/* deeper elements */
+:-webkit-full-screen video {
+  width: 100%;
+  height: 100%;
+}
