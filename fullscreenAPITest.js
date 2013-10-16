@@ -2,6 +2,7 @@
  * jsFrontend Fullscreen API Test
  *
  * @author Jeroen Desloovere <jeroen@siesqo.be>
+ * @source https://github.com/deslooverej/fullscreen-api
  */
 jsFrontendFullscreenAPITest =
 {

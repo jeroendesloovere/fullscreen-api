@@ -2,6 +2,7 @@
  * jsFrontend Fullscreen API
  *
  * @author Jeroen Desloovere <jeroen@siesqo.be>
+ * @source https://github.com/deslooverej/fullscreen-api
  */
 jsFrontendFullscreenAPI =
 {
