@@ -11,19 +11,19 @@ fullscreenAPITest =
 		// start fullscreen
 		$('#btnStart').on('click', function()
 		{
-			jsFrontendFullscreenAPI.start();
+			fullscreenAPI.start();
 		});
 
 		// start fullscreen for container
 		$('#btnStartContainer').on('click', function()
 		{
-			jsFrontendFullscreenAPI.start('container');
+			fullscreenAPI.start('container');
 		});
 
 		// stop fullscreen
 		$('#btnStop').on('click', function()
 		{
-			jsFrontendFullscreenAPI.stop();
+			fullscreenAPI.stop();
 		});
 	}
 }
