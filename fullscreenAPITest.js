@@ -1,10 +1,10 @@
 /**
- * jsFrontend Fullscreen API Test
+ * Fullscreen API Test
  *
  * @author Jeroen Desloovere <jeroen@siesqo.be>
  * @source https://github.com/deslooverej/fullscreen-api
  */
-jsFrontendFullscreenAPITest =
+fullscreenAPITest =
 {
 	init: function()
 	{
@@ -28,4 +28,4 @@ jsFrontendFullscreenAPITest =
 	}
 }
 
-$(jsFrontendFullscreenAPITest.init);
+$(fullscreenAPITest.init);

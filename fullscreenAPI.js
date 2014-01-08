@@ -1,10 +1,10 @@
 /**
- * jsFrontend Fullscreen API
+ * Fullscreen API
  *
  * @author Jeroen Desloovere <jeroen@siesqo.be>
  * @source https://github.com/deslooverej/fullscreen-api
  */
-jsFrontendFullscreenAPI =
+fullscreenAPI =
 {
 	prefix: false,
 	init: function()
@@ -16,7 +16,7 @@ jsFrontendFullscreenAPI =
 		element = document.documentElement;
 
 		// if 'requestFullScreen' is natively supported just use it
-		if(element.requestFullScreen) jsFrontendFullscreenAPI.prefix = '';
+		if(element.requestFullScreen) fullscreenAPI.prefix = '';
 
 		// not natively supported
 		else
@@ -26,13 +26,13 @@ jsFrontendFullscreenAPI =
 			{
 				if(element[prefixes[i] + 'RequestFullScreen'])
 				{
-					jsFrontendFullscreenAPI.prefix = prefixes[i];
+					fullscreenAPI.prefix = prefixes[i];
 				}
 			}
 		}
 
 		// browser doesn't support Fullscreen API
-		if(!jsFrontendFullscreenAPI.prefix) return false;
+		if(!fullscreenAPI.prefix) return false;
 	},
 
 	/**
@@ -46,7 +46,7 @@ jsFrontendFullscreenAPI =
 		var element = (elementId == null) ? document.documentElement : document.getElementById(elementId);
 
 		// init prefix
-		var prefix = jsFrontendFullscreenAPI.prefix;
+		var prefix = fullscreenAPI.prefix;
 
 		// fullscreen not supported, stop here
 		if(!prefix) return false;
@@ -64,7 +64,7 @@ jsFrontendFullscreenAPI =
 	stop: function()
 	{
 		// init prefix
-		var prefix = jsFrontendFullscreenAPI.prefix;
+		var prefix = fullscreenAPI.prefix;
 
 		// fullscreen not supported, stop here
 		if(!prefix) return false;
@@ -77,4 +77,4 @@ jsFrontendFullscreenAPI =
 	}
 }
 
-$(jsFrontendFullscreenAPI.init);
+$(fullscreenAPI.init);
